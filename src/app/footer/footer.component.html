@@ -25,20 +25,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#footerNavContent" aria-controls="footerNavContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
                                 <div class="collapse navbar-collapse" id="footerNavContent">
                                     <ul class="navbar-nav ml-auto">
-                                        <li class="nav-item active">
-                                            <a class="nav-link" href="index.html">Home</a>
+
+                                        <li class="nav-item" [ngClass]="{'active': isRouteActive('/home') }" >
+                                            <a class="nav-link" [routerLink]="'/home'">Home</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="shop.html">Shop</a>
+                                        <li class="nav-item" [ngClass]="{'active': isRouteActive('/products') }">
+                                            <a class="nav-link" [routerLink]="'/products'">Products</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="product-details.html">Product</a>
+                                        <li class="nav-item" [ngClass]="{'active': isRouteActive('/about') }">
+                                            <a class="nav-link"  [routerLink]="'/about'">About</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="cart.html">Cart</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="checkout.html">Checkout</a>
+                                        <li class="nav-item" [ngClass]="{'active': isRouteActive('/contacts') }">
+                                            <a class="nav-link"[routerLink]="'/contacts'">Contact us</a>
                                         </li>
                                     </ul>
                                 </div>

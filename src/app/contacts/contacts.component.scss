@@ -1,0 +1,31 @@
+
+h2 {
+    font-size: 21px;
+}
+.social { 
+    .fa-facebook-square {
+        color: #4267B2;
+        font-size: 19px;
+    }
+
+    .fa-twitter-square {
+        color: #4267B2;
+        font-size: 19px;
+    }
+
+    .fa-instagram {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        border-radius: 4px;
+        text-align: center;
+        color: #fff;
+        vertical-align: middle;
+        background: #d6249f;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); 
+    } 
+}
+
+.single-products-catagory {
+    display: inline-block;
+}

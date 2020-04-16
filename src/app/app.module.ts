@@ -10,6 +10,7 @@ import { SideMenuComponent } from './side-menu/side-menu.component';
 import { ProductsComponent } from './products/products.component';
 import { AboutComponent } from './about/about.component';
 import { ProductComponent } from './product/product.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ProductComponent } from './product/product.component';
     ContactsComponent,
     HomeComponent,
     SideMenuComponent,
-    ProductComponent
+    ProductComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
