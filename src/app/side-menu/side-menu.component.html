@@ -1,12 +1,12 @@
-<header class="header-area clearfix">
-    <!-- Close Icon -->
-    <div class="nav-close">
+<header class="header-area clearfix" [ngClass]="{'bp-xs-on': dataService.statusSubject.value}">
+    <div class="nav-close" (click)="closeMenu()">
         <i class="fa fa-close" aria-hidden="true"></i>
     </div>
 
     <div class="logo">
-        <a href="index.html"><img src="assets/img/core-img/logo.png" alt=""></a>
+        <a [routerLink]="'/home'"><img src="assets/img/core-img/logo.png" alt=""></a>
     </div>
+    
 
     <nav class="morale-floors-nav">
         <ul>
@@ -24,10 +24,9 @@
     </div> -->
 
     <div class="social-info d-flex justify-content-between section-padding-100">
-        <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/moralefloors/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+        <a href="https://www.picuki.com/profile/moralefloors" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
     </div>
 </header>
 

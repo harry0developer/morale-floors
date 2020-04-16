@@ -1,4 +1,5 @@
 import { Component, Input, AfterContentInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-product',
@@ -6,15 +7,12 @@ import { Component, Input, AfterContentInit } from '@angular/core';
   styleUrls: ['./product.component.scss']
 })
 export class ProductComponent implements AfterContentInit {
-
   @Input() category;
   @Input() products;
 
   constructor() { }
 
   ngAfterContentInit() {
-    console.log(this.products);
-
     if (this.category.category.toLowerCase() === 'adhesive') {
       // this.products = this.adhesive;
     } else if (this.category.category.toLowerCase() === 'mosaic') {

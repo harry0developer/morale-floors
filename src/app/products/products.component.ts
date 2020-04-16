@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { DataService } from '../data.service';
 
 export interface Product {
   name: string;
@@ -39,7 +39,6 @@ export class ProductsComponent implements OnInit {
     { name: 'Tiles', category: 'tiles', },
     { name: 'Vynil', category: 'vynil', }
   ];
-
 
   adhesive = [
     {
@@ -394,13 +393,13 @@ export class ProductsComponent implements OnInit {
   activeCategory = this.category[0];
 
   products: any = this.adhesive;
-  constructor() { }
+  open = false;
+  constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
   }
 
   activateProduct(product: string) {
-    console.log(this.activeCategory);
     if (product.toLowerCase() === 'adhesive') {
       this.activeCategory = this.category[0];
       this.products = this.adhesive;
@@ -420,9 +419,22 @@ export class ProductsComponent implements OnInit {
       this.activeCategory = this.category[5];
       this.products = this.vynil;
     }
+    this.scrollToTop();
   }
 
   isActive(category: string): boolean {
     return this.activeCategory.category === category;
   }
+
+  scrollToTop() {
+    const scrollToTop = window.setInterval(() => {
+      const pos = window.pageYOffset;
+      if (pos > 0) {
+        window.scrollTo(0, pos - 20); // how far to scroll on each step
+      } else {
+        window.clearInterval(scrollToTop);
+      }
+    }, 16);
+  }
+
 }

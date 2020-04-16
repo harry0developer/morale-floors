@@ -1,50 +1,14 @@
-
-
-<!-- Search Wrapper Area Start -->
-<div class="search-wrapper section-padding-100">
-    <div class="search-close">
-        <i class="fa fa-close" aria-hidden="true"></i>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="search-content">
-                    <form action="#" method="get">
-                        <input type="search" name="search" id="search" placeholder="Type your keyword...">
-                        <button type="submit"><img src="assets/img/core-img/search.png" alt=""></button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Search Wrapper Area End -->
-
 <!-- ##### Main Content Wrapper Start ##### -->
 <div class="main-content-wrapper d-flex clearfix">
-
-    <!-- Mobile Nav (max width 767px)-->
-    <div class="mobile-nav">
-        <!-- Navbar Brand -->
-        <div class="morale-floors-navbar-brand">
-            <a href="index.html"><img src="assets/img/core-img/logo.png" alt=""></a>
-        </div>
-        <!-- Navbar Toggler -->
-        <div class="morale-floors-navbar-toggler">
-            <span></span><span></span><span></span>
-        </div>
-    </div>
-    
-
+    <app-logo></app-logo>
     <app-side-menu></app-side-menu>
-
     <!-- Product Catagories Area Start -->
     <div class="products-catagories-area clearfix">
         <div class="morale-floors-pro-catagory clearfix">
 
             <!-- Single Catagory -->
             <div class="single-products-catagory clearfix">
-                <a href="shop.html">
+                <a [routerLink]="'/products'" >
                     <img src="assets/img/bg-img/1.jpg" alt="">
                     <!-- Hover Content -->
                     <div class="hover-content">
@@ -56,7 +20,7 @@
 
             <!-- Single Catagory -->
             <div class="single-products-catagory clearfix">
-                <a href="shop.html">
+                <a [routerLink]="'/products'" >
                     <img src="assets/img/bg-img/2.jpg" alt="">
                     <!-- Hover Content -->
                     <div class="hover-content">
@@ -69,7 +33,7 @@
 
             <!-- Single Catagory -->
             <div class="single-products-catagory clearfix">
-                <a href="shop.html">
+                <a [routerLink]="'/products'" >
                     <img src="assets/img/bg-img/3.jpg" alt="">
                     <!-- Hover Content -->
                     <div class="hover-content">
@@ -82,7 +46,7 @@
 
             <!-- Single Catagory -->
             <div class="single-products-catagory clearfix">
-                <a href="shop.html">
+                <a [routerLink]="'/products'" >
                     <img src="assets/img/bg-img/4.jpg" alt="">
                     <!-- Hover Content -->
                     <div class="hover-content">
@@ -95,7 +59,7 @@
 
             <!-- Single Catagory -->
             <div class="single-products-catagory clearfix">
-                <a href="shop.html">
+                <a [routerLink]="'/products'" >
                     <img src="assets/img/bg-img/5.jpg" alt="">
                     <!-- Hover Content -->
                     <div class="hover-content">
@@ -108,7 +72,7 @@
 
             <!-- Single Catagory -->
             <div class="single-products-catagory clearfix">
-                <a href="shop.html">
+                <a [routerLink]="'/products'" >
                     <img src="assets/img/bg-img/6.jpg" alt="">
                     <!-- Hover Content -->
                     <div class="hover-content">

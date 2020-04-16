@@ -1,49 +1,47 @@
-
-    <!-- ##### Footer Area Start ##### -->
-    <footer class="footer_area clearfix">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- Single Widget Area -->
-                <div class="col-12 col-lg-4">
-                    <div class="single_widget_area">
-                        <!-- Logo -->
-                        <div class="footer-logo mr-50">
-                            <a href="index.html"><img src="assets/img/core-img/logo2.png" alt=""></a>
-                        </div>
-                        <!-- Copywrite Text -->
-                        <p class="copywrite"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved.  A division of <a href="https://themewagon.com/" target="_blank">Morale Media</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+<footer class="footer_area clearfix">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Single Widget Area -->
+            <div class="col-12 col-lg-4">
+                <div class="single_widget_area">
+                    <!-- Logo -->
+                    <div class="footer-logo mr-50">
+                        <a [routerLink]="'/home'"><img src="assets/img/core-img/logo2.png" alt=""></a>
                     </div>
+                    <!-- Copywrite Text -->
+                    <p class="copywrite"> 
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> 
+                        All rights reserved.  A division of <a href="http://moralemedia.co.za/" target="_blank">Morale Media</a>
+                    </p>
                 </div>
-                <!-- Single Widget Area -->
-                <div class="col-12 col-lg-8">
-                    <div class="single_widget_area">
-                        <!-- Footer Menu -->
-                        <div class="footer_menu">
-                            <nav class="navbar navbar-expand-lg justify-content-end">
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#footerNavContent" aria-controls="footerNavContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
-                                <div class="collapse navbar-collapse" id="footerNavContent">
-                                    <ul class="navbar-nav ml-auto">
-
-                                        <li class="nav-item" [ngClass]="{'active': isRouteActive('/home') }" >
-                                            <a class="nav-link" [routerLink]="'/home'">Home</a>
-                                        </li>
-                                        <li class="nav-item" [ngClass]="{'active': isRouteActive('/products') }">
-                                            <a class="nav-link" [routerLink]="'/products'">Products</a>
-                                        </li>
-                                        <li class="nav-item" [ngClass]="{'active': isRouteActive('/about') }">
-                                            <a class="nav-link"  [routerLink]="'/about'">About</a>
-                                        </li>
-                                        <li class="nav-item" [ngClass]="{'active': isRouteActive('/contacts') }">
-                                            <a class="nav-link"[routerLink]="'/contacts'">Contact us</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </nav>
-                        </div>
+            </div>
+            <!-- Single Widget Area -->
+            <div class="col-12 col-lg-8">
+                <div class="single_widget_area">
+                    <!-- Footer Menu -->
+                    <div class="footer_menu">
+                        <nav class="navbar navbar-expand-lg justify-content-end">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#footerNavContent" aria-controls="footerNavContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+                            <div class="collapse navbar-collapse" id="footerNavContent">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item" [ngClass]="{'active': isRouteActive('/home') }" >
+                                        <a class="nav-link" [routerLink]="'/home'">Home</a>
+                                    </li>
+                                    <li class="nav-item" [ngClass]="{'active': isRouteActive('/products') }">
+                                        <a class="nav-link" [routerLink]="'/products'">Products</a>
+                                    </li>
+                                    <li class="nav-item" [ngClass]="{'active': isRouteActive('/about') }">
+                                        <a class="nav-link"  [routerLink]="'/about'">About</a>
+                                    </li>
+                                    <li class="nav-item" [ngClass]="{'active': isRouteActive('/contacts') }">
+                                        <a class="nav-link"[routerLink]="'/contacts'">Contact us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
